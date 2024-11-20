@@ -2,8 +2,8 @@ import requests
 from youtube_transcript_api import YouTubeTranscriptApi
 
 # Replace with your video ID and webhook URL
-video_id = "GPLImB-I71w"
-webhook_url = "https://primary-production-6a78.up.railway.app/webhook-test/88083a26-a34a-41cd-9340-bb99db04a0cb"
+video_id = "YOUR_VIDEO_ID"
+webhook_url = "YOUR_WEBHOOK_URL"
 
 # Fetch the transcript
 transcript = YouTubeTranscriptApi.get_transcript(video_id)
