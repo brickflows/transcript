@@ -2,8 +2,10 @@ import requests
 from youtube_transcript_api import YouTubeTranscriptApi
 
 # Replace with your video ID and webhook URL
-video_id = "YOUR_VIDEO_ID"
-webhook_url = "YOUR_WEBHOOK_URL"
+import os
+
+video_id = os.getenv("VIDEO_ID")
+webhook_url = os.getenv("WEBHOOK_URL")
 
 # Fetch the transcript
 transcript = YouTubeTranscriptApi.get_transcript(video_id)
